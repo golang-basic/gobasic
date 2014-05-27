@@ -1,0 +1,19 @@
+package guess_number_test
+
+import (
+	"github.com/gobasic/guess_number"
+
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
+)
+
+var _ = Describe("Guess_Number", func() {
+	Describe("Asks user for its name ", func() {
+		Ω(Name).Should(BeNil())
+		Greet()
+		Ω(Name).ShouldNot(BeNil())
+	})
+	Describe("Choose a Random Number less than 20", func(){
+
+	})
+})

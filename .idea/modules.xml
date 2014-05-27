@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/gobasic.iml" filepath="$PROJECT_DIR$/gobasic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tic_tac_toe/tic_tac_toe.iml" filepath="$PROJECT_DIR$/tic_tac_toe/tic_tac_toe.iml" />
+    </modules>
+  </component>
+</project>
+

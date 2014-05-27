@@ -1,0 +1,25 @@
+package guess_number_test
+
+import (
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
+
+	"testing"
+)
+/**
+TestGuessNumber is a testing test.
+The Go test runner will run this function when you run go test or ginkgo.
+ */
+func TestGuessNumber(t *testing.T) {
+	/**
+	A Ginkgo test signals failure by calling Ginkgo’s Fail(description string) function.
+	We pass this function to Gomega using RegisterFailHandler.
+	Sole connection point between Ginkgo and Gomega.
+	 */
+	RegisterFailHandler(Fail)
+	/*
+	Tells Ginkgo to start the test suite.
+	Ginkgo will automatically fail the testing.T if any of your specs fail.
+	 */
+	RunSpecs(t, "GuessNumber Suite")
+}
