@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3a04f10-9ad9-4f81-afc3-f9075d37397f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe_init.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gobasic" afterPath="$PROJECT_DIR$/gobasic" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.go" afterPath="$PROJECT_DIR$/main.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe.go" afterPath="$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe_test.go" afterPath="$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe_test.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -75,7 +75,16 @@
           <file leaf-file-name="tic_tac_toe.go" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe.go">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="10" column="14" selection-start="105" selection-end="115" vertical-scroll-proportion="0.06263048" vertical-offset="120" max-vertical-offset="1320">
+                <state line="43" column="25" selection-start="839" selection-end="839" vertical-scroll-proportion="1.4983277" vertical-offset="197" max-vertical-offset="810">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="tic_tac_toe_init.go" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe_init.go">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="13" column="56" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1575">
                   <folding />
                 </state>
               </provider>
@@ -84,7 +93,7 @@
           <file leaf-file-name="main.go" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main.go">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="25" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+                <state line="16" column="51" selection-start="379" selection-end="379" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
                   <folding />
                 </state>
               </provider>
@@ -97,7 +106,7 @@
           <file leaf-file-name="tic_tac_toe_test.go" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe_test.go">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="31" column="42" selection-start="975" selection-end="975" vertical-scroll-proportion="0.87242025" vertical-offset="0" max-vertical-offset="720">
+                <state line="46" column="0" selection-start="1386" selection-end="1386" vertical-scroll-proportion="1.2322946" vertical-offset="255" max-vertical-offset="840">
                   <folding />
                 </state>
               </provider>
@@ -134,6 +143,7 @@
         <option value="$PROJECT_DIR$/game/guess_number/guess_number_test.go" />
         <option value="$PROJECT_DIR$/game/guessGameTester.go" />
         <option value="$PROJECT_DIR$/main.go" />
+        <option value="$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe_init.go" />
         <option value="$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe.go" />
         <option value="$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe_test.go" />
       </list>
@@ -142,7 +152,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="818" />
+    <option name="height" value="817" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -668,7 +678,7 @@
       <changelist id="e3a04f10-9ad9-4f81-afc3-f9075d37397f" name="Default" comment="" />
       <created>1401127674233</created>
       <updated>1401127674233</updated>
-      <workItem from="1401127680626" duration="42360000" />
+      <workItem from="1401127680626" duration="44802000" />
     </task>
     <task id="LOCAL-00001" summary="Added tic tac toe source and test files&#10;">
       <created>1401227728618</created>
@@ -682,14 +692,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42360000" />
+    <option name="totallyTimeSpent" value="44802000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="818" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1440" height="817" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43633762" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -780,21 +790,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="25" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+        <state line="16" column="51" selection-start="379" selection-end="379" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe_init.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="56" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1575">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="14" selection-start="105" selection-end="115" vertical-scroll-proportion="0.06263048" vertical-offset="120" max-vertical-offset="1320">
+        <state line="43" column="25" selection-start="839" selection-end="839" vertical-scroll-proportion="1.4983277" vertical-offset="197" max-vertical-offset="810">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="42" selection-start="975" selection-end="975" vertical-scroll-proportion="0.87242025" vertical-offset="0" max-vertical-offset="720">
+        <state line="46" column="0" selection-start="1386" selection-end="1386" vertical-scroll-proportion="1.2322946" vertical-offset="255" max-vertical-offset="840">
           <folding />
         </state>
       </provider>
