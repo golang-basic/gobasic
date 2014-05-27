@@ -13,9 +13,9 @@ func main() {
 	switch {
 		case choice == 1:
 			fmt.Println("Playing Tic-Tac-Toe")
-			tic_tac_toe.TestTicTacToe()
-			tictactoe := tic_tac_toe.NewTicTacToeGame()
-			tictactoe.Initialize()
+//			tic_tac_toe.TestTicTacToe()
+			tictactoe := tic_tac_toe.NewTicTacToe()
+			tictactoe.Init()
 			tictactoe.Play()
 		case choice == 2:
 			fmt.Println("Playing Guess Game")

@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3a04f10-9ad9-4f81-afc3-f9075d37397f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gobasic" afterPath="$PROJECT_DIR$/gobasic" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.go" afterPath="$PROJECT_DIR$/main.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe.go" afterPath="$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe_test.go" afterPath="$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe_test.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -70,10 +72,19 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="tic_tac_toe.go" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="tic_tac_toe.go" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe.go">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="63" column="24" selection-start="1473" selection-end="1473" vertical-scroll-proportion="2.207944" vertical-offset="0" max-vertical-offset="1095">
+                <state line="10" column="14" selection-start="105" selection-end="115" vertical-scroll-proportion="0.06263048" vertical-offset="120" max-vertical-offset="1320">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.go" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/main.go">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="19" column="25" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
                   <folding />
                 </state>
               </provider>
@@ -83,10 +94,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="tic_tac_toe_test.go" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="tic_tac_toe_test.go" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe_test.go">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="30" column="0" selection-start="781" selection-end="781" vertical-scroll-proportion="1.0514019" vertical-offset="0" max-vertical-offset="615">
+                <state line="31" column="42" selection-start="975" selection-end="975" vertical-scroll-proportion="0.87242025" vertical-offset="0" max-vertical-offset="720">
                   <folding />
                 </state>
               </provider>
@@ -120,11 +131,11 @@
         <option value="$PROJECT_DIR$/tic_tac_toe/main.go" />
         <option value="$PROJECT_DIR$/tic_tac_toe/tic_tac_toe_test.go" />
         <option value="$PROJECT_DIR$/guess_number/guessGameTester.go" />
-        <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/game/guess_number/guess_number_test.go" />
         <option value="$PROJECT_DIR$/game/guessGameTester.go" />
-        <option value="$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe_test.go" />
+        <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe.go" />
+        <option value="$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe_test.go" />
       </list>
     </option>
   </component>
@@ -657,24 +668,28 @@
       <changelist id="e3a04f10-9ad9-4f81-afc3-f9075d37397f" name="Default" comment="" />
       <created>1401127674233</created>
       <updated>1401127674233</updated>
-      <workItem from="1401127680626" duration="41200000" />
+      <workItem from="1401127680626" duration="42360000" />
     </task>
     <task id="LOCAL-00001" summary="Added tic tac toe source and test files&#10;">
       <created>1401227728618</created>
       <updated>1401227728618</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="wip Initialize tictactoe &#10;">
+      <created>1401229847435</created>
+      <updated>1401229847436</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41200000" />
+    <option name="totallyTimeSpent" value="42360000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="818" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -715,7 +730,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Added tic tac toe source and test files&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added tic tac toe source and test files&#10;" />
+    <MESSAGE value="wip Initialize tictactoe &#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="wip Initialize tictactoe &#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -748,13 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="34" selection-start="407" selection-end="407" vertical-scroll-proportion="0.5957944" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game/guess_number/guess_number_test.go">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="53" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.3317757" vertical-offset="503" max-vertical-offset="1020">
@@ -769,16 +778,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe_test.go">
+    <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="781" selection-end="781" vertical-scroll-proportion="1.0514019" vertical-offset="0" max-vertical-offset="615">
+        <state line="19" column="25" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="24" selection-start="1473" selection-end="1473" vertical-scroll-proportion="2.207944" vertical-offset="0" max-vertical-offset="1095">
+        <state line="10" column="14" selection-start="105" selection-end="115" vertical-scroll-proportion="0.06263048" vertical-offset="120" max-vertical-offset="1320">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="42" selection-start="975" selection-end="975" vertical-scroll-proportion="0.87242025" vertical-offset="0" max-vertical-offset="720">
           <folding />
         </state>
       </provider>

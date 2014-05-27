@@ -20,10 +20,17 @@ var _ = Describe("TicTacToe", func() {
 			})
 			It("sets the layout on screen", func() {
 				Expect(tictactoe.GameOn).Should(BeTrue())
-
+				Expect(tictactoe.SeenPosition).Should(BeTrue())
+				Expect(tictactoe.SeenLayout).Should(BeTrue())
 			})
 			It("lets user pick up a symbol and chooses symbol for AI", func(){
 				Expect(tictactoe.GameOn).Should(BeTrue())
+				if tictactoe.UserSymbol != "X" || tictactoe.UserSymbol != "O" {
+					Fail("Failed to get user Symbol")
+				}
+				if tictactoe.UserSymbol != "X" || tictactoe.UserSymbol != "O" {
+					Fail("Failed to set AI Symbol")
+				}
 
 			})
 			It("randomly selects who should play first turn", func() {
