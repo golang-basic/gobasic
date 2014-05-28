@@ -27,7 +27,7 @@ func (tictactoe *gameTicTacToe) layout() {
 	line := []string{endLine}
 	fmt.Println(blockLine)
 	for i := 0; i <= 8; i++ {
-		line = append(line, tictactoe.cells[i], endLine, tictactoe.cells[i+1], endLine, tictactoe.cells[i+2], endLine)
+		line = append(line, tictactoe.Cells[i], endLine, tictactoe.Cells[i+1], endLine, tictactoe.Cells[i+2], endLine)
 		fmt.Println(line)
 		i++
 		i++
