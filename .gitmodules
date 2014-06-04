@@ -1,3 +1,9 @@
 [submodule "game/guess_number"]
 	path = game/guess_number
 	url = https://github.com/golang-basic/guess_number.git
+[submodule "game/tic_tac_toe"]
+	path = game/tic_tac_toe
+	url = https://github.com/golang-basic/tic_tac_toe.git
+[submodule "game/tower_of_hanoi"]
+	path = game/tower_of_hanoi
+	url = https://github.com/golang-basic/tower_of_hanoi.git
