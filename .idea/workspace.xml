@@ -2,21 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3a04f10-9ad9-4f81-afc3-f9075d37397f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basics/closure/closureEasy.go" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/game/guess_number/guess_number.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/game/guess_number/guess_number_suite_test.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/game/guess_number/guess_number_test.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/game/guess_number/temp_test" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/game/guess_number/tmp_suite_test" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe_init.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe_suite_test.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe_test.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe_winning.go" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basics/closure/closure" afterPath="$PROJECT_DIR$/basics/closure/closure" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basics/closure/closure.go" afterPath="$PROJECT_DIR$/basics/closure/closure.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.go" afterPath="$PROJECT_DIR$/main.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gobasic.iws" />
@@ -104,7 +89,7 @@
           <file leaf-file-name="closureEasy.go" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/basics/closure/closureEasy.go">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="17" column="16" selection-start="228" selection-end="228" vertical-scroll-proportion="0.75" vertical-offset="0" max-vertical-offset="600">
+                <state line="17" column="16" selection-start="228" selection-end="228" vertical-scroll-proportion="0.75443786" vertical-offset="0" max-vertical-offset="600">
                   <folding />
                 </state>
               </provider>
@@ -117,7 +102,7 @@
           <file leaf-file-name="main.go" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main.go">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="28" column="33" selection-start="682" selection-end="694" vertical-scroll-proportion="1.1898017" vertical-offset="0" max-vertical-offset="555">
+                <state line="28" column="33" selection-start="682" selection-end="694" vertical-scroll-proportion="1.1965812" vertical-offset="0" max-vertical-offset="555">
                   <folding />
                 </state>
               </provider>
@@ -654,7 +639,7 @@
       <workItem from="1401127680626" duration="88513000" />
       <workItem from="1401596382777" duration="2770000" />
       <workItem from="1401669996304" duration="640000" />
-      <workItem from="1401807851657" duration="4661000" />
+      <workItem from="1401807851657" duration="4762000" />
     </task>
     <task id="LOCAL-00001" summary="Added tic tac toe source and test files&#10;">
       <created>1401227728618</created>
@@ -676,11 +661,15 @@
       <created>1401561700463</created>
       <updated>1401561700463</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Removed all the subdirectories ( into separate submodules) &#10;Adding two new folders basics and game&#10;Game will have all the game submodules in GoLang">
+      <created>1401841811972</created>
+      <updated>1401841811972</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96584000" />
+    <option name="totallyTimeSpent" value="96685000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -707,7 +696,7 @@
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44379562" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44509518" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -720,6 +709,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -731,7 +721,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -744,6 +733,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
@@ -753,7 +744,8 @@
     <MESSAGE value="Tic Tac Toe Game Completes today !!!" />
     <MESSAGE value="Closure Variadic and array:mutability check in golang" />
     <MESSAGE value="Arry mutability checks &#10;Tower of Hanoi's &#10;1. get the sorted list of mem addresses ( based only on values inside mem addresses)&#10;2. exchange the values those mem addresses based on the returned sorted list&#10;&#10;2 will probably be not required for tower to hanoi problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arry mutability checks &#10;Tower of Hanoi's &#10;1. get the sorted list of mem addresses ( based only on values inside mem addresses)&#10;2. exchange the values those mem addresses based on the returned sorted list&#10;&#10;2 will probably be not required for tower to hanoi problem" />
+    <MESSAGE value="Removed all the subdirectories ( into separate submodules) &#10;Adding two new folders basics and game&#10;Game will have all the game submodules in GoLang" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed all the subdirectories ( into separate submodules) &#10;Adding two new folders basics and game&#10;Game will have all the game submodules in GoLang" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -833,7 +825,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/basics/closure/closureEasy.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="16" selection-start="228" selection-end="228" vertical-scroll-proportion="0.75" vertical-offset="0" max-vertical-offset="600">
+        <state line="17" column="16" selection-start="228" selection-end="228" vertical-scroll-proportion="0.75443786" vertical-offset="0" max-vertical-offset="600">
           <folding />
         </state>
       </provider>
