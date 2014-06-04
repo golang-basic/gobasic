@@ -10,7 +10,7 @@ var f0, f1 int = 0, 1
 type T func() (*[]int)
 
 func getSeries(arr []int, n int) T {
-//	fmt.Println(len(arr))
+	//	fmt.Println(len(arr))
 	fmt.Println(cap(arr))
 	switch {
 	case n == 1 :
@@ -31,7 +31,7 @@ func getSeries(arr []int, n int) T {
 			arr[0] = f0
 			arr[1] = f1
 			for i := 2; i < n-1; i++ {
-				fmt.Println("adding"+ strconv.Itoa((arr[i-1]+arr[i])))
+				fmt.Println("adding" + strconv.Itoa((arr[i - 1] + arr[i])))
 				arr[i] = (arr[i-1]+arr[i])
 			}
 			return &arr
@@ -63,4 +63,26 @@ func main() {
 	fmt.Println(fibbonaci0(1))
 	fmt.Println(fibbonaci0(2))
 	fmt.Println(fibbonaci0(5))
+
+	/**
+	Get basic closure
+	 */
+
+	addSeries := GetAnnonymousAddSeries()
+	squareSeries := GetAnnonymousSquareSeries()
+	tylorSeries := GetAnnonymousTylorSeries()
+	fmt.Println("Number series")
+	for i := 0; i < 10; i++ {
+		fmt.Printf(" %d", addSeries())
+	}
+	fmt.Println("Square series")
+
+	for i := 0; i < 10; i++ {
+		fmt.Printf(" %d", squareSeries())
+	}
+	fmt.Println("Tylor series")
+
+	for i := .999; i > 0.5; i = i - .2{
+		fmt.Printf(" %d", tylorSeries(i))
+	}
 }
