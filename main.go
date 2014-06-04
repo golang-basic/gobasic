@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/gobasic/game/tic_tac_toe"
 	"github.com/gobasic/game/guess_number"
+	"github.com/gobasic/game/tower_of_hanoi"
 )
 
 func main() {
