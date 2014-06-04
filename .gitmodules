@@ -1,0 +1,3 @@
+[submodule "game/guess_number"]
+	path = game/guess_number
+	url = https://github.com/golang-basic/guess_number.git
