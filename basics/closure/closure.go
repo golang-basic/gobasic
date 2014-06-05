@@ -31,7 +31,14 @@ func main() {
 	}
 	fmt.Println("Tylor series")
 
-	for i := .999; i > 0.5; i = i - .2{
+	for i := .999; i > 0.5; i = i-.2 {
 		fmt.Printf(" %f", tylorSeries(i))
 	}
+
+	/**
+	Closure with goroutine
+	 */
+	fmt.Println("\nClosures and GoRoutines")
+	WrongClosureWithRoutine()
+	CorrectClosureWithRoutine()
 }
