@@ -7,3 +7,6 @@
 [submodule "game/tower_of_hanoi"]
 	path = game/tower_of_hanoi
 	url = https://github.com/golang-basic/tower_of_hanoi.git
+[submodule "lib/go-curl/go-curl"]
+	path = lib/go-curl/go-curl
+	url = https://github.com/golang-basic/go-curl.git
