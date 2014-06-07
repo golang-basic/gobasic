@@ -5,11 +5,12 @@ import (
 	"github.com/gobasic/game/tic_tac_toe"
 	"github.com/gobasic/game/guess_number"
 	"github.com/gobasic/game/tower_of_hanoi"
+	"github.com/gobasic/game/get_blog_stats"
 )
 
 func main() {
-	choice := 0
-	fmt.Println("Enter the choice.\n 1. Tic-Tac-Toe \n 2. Guess Number ")
+	choice := 4
+	fmt.Println("Enter the choice.\n 1. Tic-Tac-Toe \n 2. Guess Number\n 3. Tower of Hanoi ")
 	fmt.Scanf("%d", &choice)
 	switch {
 	case choice == 1:
@@ -26,7 +27,10 @@ func main() {
 		gg.Play()
 	case choice == 3:
 		fmt.Println("Playing Tower of hanoi")
-		towerOfHanoi := tower_of_hanoi.NewTowerOfHanoi(3)
-		towerOfHanoi.SimulateGame()
+		tower_of_hanoi.NewTowerOfHanoi(3)
+		tower_of_hanoi.SimulateGame()
+	case choice == 4:
+		fmt.Println("Playing Blog runs")
+		get_blog_stats.ExecuteBlog()
 	}
 }
