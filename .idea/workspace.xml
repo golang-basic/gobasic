@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3a04f10-9ad9-4f81-afc3-f9075d37397f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="e3a04f10-9ad9-4f81-afc3-f9075d37397f" name="Default" comment="" />
     <ignored path="gobasic.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -102,6 +100,41 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="sshMachine.go" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game/get_blog_stats/sshMachine.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="0" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="825">
+      <file leaf-file-name="client.go" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/ssoni_rot2/workspace/phd-cf/broker-release/src/deps/code.google.com/p/go.crypto/ssh/client.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="185" column="62" selection-start="5370" selection-end="5376" vertical-scroll-proportion="0.0" vertical-offset="2568" max-vertical-offset="3405">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readhosts_fromfile.go" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/go-mssh/readhosts_fromfile.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="35" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+      <file leaf-file-name="main.go" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="12" selection-start="349" selection-end="349" vertical-scroll-proportion="0.6069364" vertical-offset="0" max-vertical-offset="630">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HostAndUrls.go" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game/get_blog_stats/HostAndUrls.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="18" selection-start="417" selection-end="417" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="600">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="client.go" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/ssoni_rot2/workspace/phd-cf/broker-release/src/deps/code.google.com/p/go.crypto/ssh/client.go">
           <provider selected="true" editor-type-id="text-editor">
@@ -120,6 +153,9 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="tower_of_hanoi.go" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game/tower_of_hanoi/tower_of_hanoi.go">
+          <provider selected="true" editor-type-id="text-editor">
       <file leaf-file-name="tower_of_hanoi.go" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game/tower_of_hanoi/tower_of_hanoi.go">
           <provider selected="true" editor-type-id="text-editor">
@@ -751,7 +787,6 @@
       <workItem from="1401669996304" duration="640000" />
       <workItem from="1401807851657" duration="12400000" />
       <workItem from="1402022978720" duration="4059000" />
-      <workItem from="1402081005682" duration="12288000" />
     </task>
     <task id="LOCAL-00001" summary="Added tic tac toe source and test files&#10;">
       <created>1401227728618</created>
@@ -793,11 +828,15 @@
       <created>1402126459389</created>
       <updated>1402126459389</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="WIP : Blog stat only till the local machine">
+      <created>1402126554301</created>
+      <updated>1402126554301</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120670000" />
+    <option name="totallyTimeSpent" value="120737000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -906,7 +945,8 @@
     <MESSAGE value="Added Fibonnaci Series Generation to Closure package , However it is done recursively" />
     <MESSAGE value="added closure with goroutine (concurrency with go)" />
     <MESSAGE value="Changes in Golang to include blog stat program" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes in Golang to include blog stat program" />
+    <MESSAGE value="WIP : Blog stat only till the local machine" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIP : Blog stat only till the local machine" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
