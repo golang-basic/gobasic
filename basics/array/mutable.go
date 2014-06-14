@@ -149,6 +149,34 @@ func (a intP) Len() int {
 	return len(a)
 }
 
+// another one using an int[]
+type Series []int
+
+// Methods required by sort.Interface.
+func (s Series) Len() int {
+	return len(s)
+}
+func (s Series) Less(i, j int) bool {
+	return s[i] < s[j]
+}
+func (s Series) Swap(i, j int) {
+	s[i], s[j] = s[j], s[i]
+}
+
+// Method for printing - sorts the elements before printing.
+func (s Series) String() string {
+	sort.Sort(s)
+	str := "["
+	for i, elem := range s {
+		if i > 0 {
+			str += " "
+		}
+		str += fmt.Sprint(elem)
+	}
+	return str + "]"
+}
+
+
 /**
 DOES NOT WORK
  */
