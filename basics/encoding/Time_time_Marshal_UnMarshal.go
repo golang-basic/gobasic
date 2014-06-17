@@ -89,33 +89,36 @@ func main() {
 }
 
 /**
+
+
 Flaky Code :
 
 // layout shows by example how the reference time should be represented.
 	//	const layout = "Jul 16, 2013 at 12:00am (PST)"
 	//	//	loc, _ = time.LoadLocation("America/Chicago")
-	//	/*
+	//
 	//	ParseInLocation is like Parse but differs in two important ways.
 	//	First, in the absence of time zone information, Parse interprets a time as UTC;
 	//	ParseInLocation interprets the time as in the given location.
 	//	Second, when given a zone offset or abbreviation, Parse tries to match it
 	//	against the Local location; ParseInLocation uses the given location.
-	//	 */
-//	t2, _ := time.ParseInLocation(layout, "Jul 9, 2012 at 5:02am (CEST)", loc)
-//	fmt.Println(t2)
-//	fmt.Println(t2.Local())
-//
-//	t2, _ = time.ParseInLocation(layout, t.Format(layout), loc)
-//	fmt.Println(t2.IsZero()) // returns true
-//	fmt.Println(t2)
-//	fmt.Println(t2.Local())
-//
-//	t2, _ = time.ParseInLocation(layout, t.String(), loc)
-//	fmt.Println(t2.IsZero()) // returns true
-//	fmt.Println(t2)
-//
-//	fmt.Println(t2.Local())
-//
-//	fmt.Println(t.Format(layout))
-//	fmt.Println(t.UTC().Format(layout))
+	//
+	t2, _ := time.ParseInLocation(layout, "Jul 9, 2012 at 5:02am (CEST)", loc)
+	fmt.Println(t2)
+	fmt.Println(t2.Local())
+
+	t2, _ = time.ParseInLocation(layout, t.Format(layout), loc)
+	fmt.Println(t2.IsZero()) // returns true
+	fmt.Println(t2)
+	fmt.Println(t2.Local())
+
+	t2, _ = time.ParseInLocation(layout, t.String(), loc)
+	fmt.Println(t2.IsZero()) // returns true
+	fmt.Println(t2)
+
+	fmt.Println(t2.Local())
+
+	fmt.Println(t.Format(layout))
+	fmt.Println(t.UTC().Format(layout))
+
 */
