@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3a04f10-9ad9-4f81-afc3-f9075d37397f" name="Default" comment="" />
+    <list default="true" id="e3a04f10-9ad9-4f81-afc3-f9075d37397f" name="Default" comment="WIP : Blog stat only till the local machine">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basics/encoding/encoding" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basics/encoding/Time_time_Marshal_UnMarshal.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="gobasic.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,102 +68,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="blog_stat.go" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game/get_blog_stats/blog_stat.go">
+      <file leaf-file-name="dbmap.go" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/basics/db/dbmap.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="5" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="2220">
+            <state line="129" column="14" selection-start="3984" selection-end="3984" vertical-scroll-proportion="0.0" vertical-offset="1770" max-vertical-offset="2745">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sshMachine.go" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game/get_blog_stats/sshMachine.go">
+      <file leaf-file-name="Time_time_Marshal_UnMarshal.go" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/basics/encoding/Time_time_Marshal_UnMarshal.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="825">
+            <state line="18" column="42" selection-start="415" selection-end="415" vertical-scroll-proportion="0.175" vertical-offset="200" max-vertical-offset="1125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readhosts_fromfile.go" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/go-mssh/readhosts_fromfile.go">
+      <file leaf-file-name="strings.go" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///usr/local/go/src/pkg/strings/strings.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="35" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+            <state line="293" column="5" selection-start="6730" selection-end="6730" vertical-scroll-proportion="0.0" vertical-offset="4395" max-vertical-offset="10965">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HostAndUrls.go" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game/get_blog_stats/HostAndUrls.go">
+      <file leaf-file-name="path.go" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///usr/local/go/src/pkg/os/path.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="18" selection-start="417" selection-end="417" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="600">
+            <state line="18" column="5" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="1935">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sshMachine.go" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game/get_blog_stats/sshMachine.go">
+      <file leaf-file-name="sqlite3.go" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/ssoni_rot2/workspace/go/src/github.com/mattn/go-sqlite3/sqlite3.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="825">
-      <file leaf-file-name="client.go" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/ssoni_rot2/workspace/phd-cf/broker-release/src/deps/code.google.com/p/go.crypto/ssh/client.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="185" column="62" selection-start="5370" selection-end="5376" vertical-scroll-proportion="0.0" vertical-offset="2568" max-vertical-offset="3405">
+            <state line="82" column="5" selection-start="1701" selection-end="1701" vertical-scroll-proportion="0.0" vertical-offset="1031" max-vertical-offset="8100">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readhosts_fromfile.go" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/go-mssh/readhosts_fromfile.go">
+      <file leaf-file-name="sql.go" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///usr/local/go/src/pkg/database/sql/sql.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="35" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
-      <file leaf-file-name="main.go" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="12" selection-start="349" selection-end="349" vertical-scroll-proportion="0.6069364" vertical-offset="0" max-vertical-offset="630">
+            <state line="99" column="38" selection-start="2595" selection-end="2595" vertical-scroll-proportion="0.0" vertical-offset="1285" max-vertical-offset="25290">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HostAndUrls.go" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game/get_blog_stats/HostAndUrls.go">
+      <file leaf-file-name="driver.go" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///usr/local/go/src/pkg/database/sql/driver/driver.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="18" selection-start="417" selection-end="417" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="600">
+            <state line="23" column="24" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0" vertical-offset="111" max-vertical-offset="3255">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client.go" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/ssoni_rot2/workspace/phd-cf/broker-release/src/deps/code.google.com/p/go.crypto/ssh/client.go">
+      <file leaf-file-name="mutable.go" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/basics/array/mutable.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="185" column="62" selection-start="5370" selection-end="5376" vertical-scroll-proportion="0.0" vertical-offset="2568" max-vertical-offset="3405">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.go" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="12" selection-start="349" selection-end="349" vertical-scroll-proportion="0.6069364" vertical-offset="0" max-vertical-offset="630">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tower_of_hanoi.go" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game/tower_of_hanoi/tower_of_hanoi.go">
-          <provider selected="true" editor-type-id="text-editor">
-      <file leaf-file-name="tower_of_hanoi.go" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game/tower_of_hanoi/tower_of_hanoi.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="20" selection-start="131" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1125">
+            <state line="176" column="1" selection-start="3357" selection-end="3837" vertical-scroll-proportion="0.0" vertical-offset="2640" max-vertical-offset="3225">
               <folding />
             </state>
           </provider>
@@ -203,7 +178,6 @@
         <option value="$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe_test.go" />
         <option value="$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe.go" />
         <option value="$PROJECT_DIR$/basics/variadic/variadic.go" />
-        <option value="$PROJECT_DIR$/basics/array/mutable.go" />
         <option value="$PROJECT_DIR$/game/tower_of_hanoi/tower_of_hanoi_test.go" />
         <option value="$PROJECT_DIR$/game/tower_of_hanoi/tower_of_hanoi.go" />
         <option value="$PROJECT_DIR$/basics/closure/closureEasy.go" />
@@ -218,13 +192,16 @@
         <option value="$PROJECT_DIR$/game/get_blog_stats/HostAndUrls.go" />
         <option value="$PROJECT_DIR$/game/get_blog_stats/blog_stat.go" />
         <option value="$PROJECT_DIR$/main.go" />
+        <option value="$PROJECT_DIR$/basics/array/mutable.go" />
+        <option value="$PROJECT_DIR$/basics/db/dbmap.go" />
+        <option value="$PROJECT_DIR$/basics/encoding/Time_time_Marshal_UnMarshal.go" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1440" />
-    <option name="height" value="806" />
+    <option name="width" value="720" />
+    <option name="height" value="817" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -254,6 +231,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -282,56 +260,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go-mssh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gobasic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gobasic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gobasic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gobasic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tower_of_hanoi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gobasic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gobasic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="game" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -346,18 +274,31 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
+              <option name="myItemId" value="basics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gobasic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gobasic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="get_blog_stats" />
+              <option name="myItemId" value="basics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="encoding" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -787,6 +728,9 @@
       <workItem from="1401669996304" duration="640000" />
       <workItem from="1401807851657" duration="12400000" />
       <workItem from="1402022978720" duration="4059000" />
+      <workItem from="1402081005682" duration="18037000" />
+      <workItem from="1402712483084" duration="18805000" />
+      <workItem from="1402984780328" duration="1688000" />
     </task>
     <task id="LOCAL-00001" summary="Added tic tac toe source and test files&#10;">
       <created>1401227728618</created>
@@ -832,11 +776,15 @@
       <created>1402126554301</created>
       <updated>1402126554301</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Database Basics in GoLang">
+      <created>1402804603671</created>
+      <updated>1402804603671</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120737000" />
+    <option name="totallyTimeSpent" value="146912000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -859,11 +807,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="806" extended-state="6" />
+    <frame x="0" y="22" width="720" height="817" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4229651" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25074184" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -876,18 +824,18 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44635195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27110156" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -946,7 +894,8 @@
     <MESSAGE value="added closure with goroutine (concurrency with go)" />
     <MESSAGE value="Changes in Golang to include blog stat program" />
     <MESSAGE value="WIP : Blog stat only till the local machine" />
-    <option name="LAST_COMMIT_MESSAGE" value="WIP : Blog stat only till the local machine" />
+    <MESSAGE value="Database Basics in GoLang" />
+    <option name="LAST_COMMIT_MESSAGE" value="Database Basics in GoLang" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -958,20 +907,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/basics/closure/closureWithRoutines.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="14" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basics/array/mutable.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="20" selection-start="3155" selection-end="3155" vertical-scroll-proportion="0.0" vertical-offset="2025" max-vertical-offset="2805">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/basics/variadic/variadic.go">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="54" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="690">
@@ -988,9 +923,7 @@
     </entry>
     <entry file="file://$USER_HOME$/ssoni_rot2/workspace/go/src/github.com/golang-basic/go-curl/const_gen.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="205" column="4" selection-start="10265" selection-end="10265" vertical-scroll-proportion="0.0" vertical-offset="3075" max-vertical-offset="6240">
-          <folding />
-        </state>
+        <state line="205" column="4" selection-start="10265" selection-end="10265" vertical-scroll-proportion="0.0" vertical-offset="3075" max-vertical-offset="6240" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/go-curl/go-curl/examples/sepheaders.go">
@@ -1009,9 +942,7 @@
     </entry>
     <entry file="file://$USER_HOME$/ssoni_rot2/workspace/go/src/github.com/golang-basic/go-curl/easy.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="29" selection-start="5756" selection-end="5756" vertical-scroll-proportion="0.0" vertical-offset="2550" max-vertical-offset="6810">
-          <folding />
-        </state>
+        <state line="170" column="29" selection-start="5756" selection-end="5756" vertical-scroll-proportion="0.0" vertical-offset="2550" max-vertical-offset="6810" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
@@ -1120,13 +1051,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basics/array/mutable.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="20" selection-start="3155" selection-end="3155" vertical-scroll-proportion="0.0" vertical-offset="2161" max-vertical-offset="2805">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/basics/closure/closure.go">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="19" selection-start="763" selection-end="763" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="750">
@@ -1143,9 +1067,7 @@
     </entry>
     <entry file="file://$USER_HOME$/ssoni_rot2/workspace/go/src/github.com/golang-basic/go-curl/easy.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="29" selection-start="5756" selection-end="5756" vertical-scroll-proportion="0.0" vertical-offset="2550" max-vertical-offset="6810">
-          <folding />
-        </state>
+        <state line="170" column="29" selection-start="5756" selection-end="5756" vertical-scroll-proportion="0.0" vertical-offset="2550" max-vertical-offset="6810" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/go-curl/go-curl/c-callback.c">
@@ -1188,9 +1110,7 @@
     </entry>
     <entry file="file://$USER_HOME$/ssoni_rot2/workspace/go/src/github.com/golang-basic/go-curl/const_gen.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="205" column="4" selection-start="10265" selection-end="10265" vertical-scroll-proportion="0.0" vertical-offset="2902" max-vertical-offset="6240">
-          <folding />
-        </state>
+        <state line="205" column="4" selection-start="10265" selection-end="10265" vertical-scroll-proportion="0.0" vertical-offset="2902" max-vertical-offset="6240" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/go-curl/go-curl/examples/sepheaders.go">
@@ -1221,18 +1141,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game/get_blog_stats/sshMachine.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="825">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/ssoni_rot2/workspace/phd-cf/broker-release/src/deps/code.google.com/p/go.crypto/ssh/client.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="62" selection-start="5370" selection-end="5376" vertical-scroll-proportion="0.0" vertical-offset="2568" max-vertical-offset="3405">
-          <folding />
-        </state>
+        <state line="185" column="62" selection-start="5370" selection-end="5376" vertical-scroll-proportion="0.0" vertical-offset="2568" max-vertical-offset="3405" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game/tower_of_hanoi/tower_of_hanoi.go">
@@ -1249,6 +1160,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="5" selection-start="874" selection-end="874" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/get_blog_stats/sshMachine.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="0" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/game/get_blog_stats/HostAndUrls.go">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="18" selection-start="417" selection-end="417" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="600">
@@ -1258,14 +1183,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game/get_blog_stats/blog_stat.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="5" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="2220">
+        <state line="36" column="8" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="2220">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
+    <entry file="file://$PROJECT_DIR$/basics/array/mutable.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="12" selection-start="349" selection-end="349" vertical-scroll-proportion="0.6069364" vertical-offset="0" max-vertical-offset="630">
+        <state line="176" column="1" selection-start="3357" selection-end="3837" vertical-scroll-proportion="0.0" vertical-offset="2063" max-vertical-offset="3225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/ssoni_rot2/workspace/go/src/github.com/mattn/go-sqlite3/sqlite3.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="5" selection-start="1701" selection-end="1701" vertical-scroll-proportion="0.0" vertical-offset="1031" max-vertical-offset="8100">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/pkg/os/path.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="5" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="1935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/pkg/strings/strings.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="293" column="5" selection-start="6730" selection-end="6730" vertical-scroll-proportion="0.0" vertical-offset="4196" max-vertical-offset="10965">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/pkg/database/sql/sql.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="38" selection-start="2595" selection-end="2595" vertical-scroll-proportion="0.0" vertical-offset="1285" max-vertical-offset="25290">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/pkg/database/sql/driver/driver.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="24" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0" vertical-offset="111" max-vertical-offset="3255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/db/dbmap.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="129" column="14" selection-start="3984" selection-end="3984" vertical-scroll-proportion="0.0" vertical-offset="1770" max-vertical-offset="2745">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/encoding/Time_time_Marshal_UnMarshal.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="42" selection-start="415" selection-end="415" vertical-scroll-proportion="0.175" vertical-offset="200" max-vertical-offset="1125">
           <folding />
         </state>
       </provider>
