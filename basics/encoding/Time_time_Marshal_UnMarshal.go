@@ -12,7 +12,7 @@ var marshalledGobTime []byte
 
 var err error
 
-func main() {
+func Test_Time_Marshal_Unmarshall() {
 
 	loc, _ := time.LoadLocation("Europe/Berlin")
 	//Date(year int, month Month, day, hour, min, sec, nsec int, loc *Location)
