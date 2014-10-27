@@ -1,0 +1,67 @@
+{
+  "cc_api_uri": "192.168.0.100.test",
+  "cc_username": "testuser",
+  "cc_password": "testpassword",
+
+  "agent_ip_address": "10.0.0.51",
+  "agent_vm_password": "agent_vm_password",
+  "pool_size": 3,
+  "max_instances": 5,
+  "cf_system_domain": "pivotal.io",
+  "login_host": "https://login.something.smt",
+  "uaa_host": "https://uaa.something.smt",
+ 
+  "bosh": {
+    "director_ip": "10.0.0.11",
+    "username": "director",
+    "password": "director_password",
+    "network_name": "local_network",
+    "gateway": "10.0.0.1",
+    "subnet": "10.0.0.0/16",
+    "dns": ["10.0.0.11", "8.8.8.8"],
+    "reserved_ranges": ["10.0.0.1", "10.0.0.2", "10.0.0.3", "10.0.0.4", "10.0.0.5", "10.0.1.1", "10.0.1.2"]
+  },
+
+  "service_plan_details": {
+    "service_metadata": {
+      "plan_name":   "my favorite plan",
+      "plan_description": "All about the best service plan in the world...",
+      "plan_feature_1": "a nice feature", 
+      "plan_feature_2": "", 
+      "plan_feature_3": "", 
+      "plan_amount": 33.3,
+      "plan_unit": "cost per month"
+    },
+    "component_details": {
+      "number_of_phd_slaves": 12,
+      "checked_components": ["yarn_mapreduce2", "hawq"],
+      "component_settings": {
+	"namenode_data": {
+	  "ram_in_mb": 4096,
+	  "persistent_disk_in_mb": 2048,
+	  "cpu": 1  
+	},
+	"resource_manager_data": {
+	  "ram_in_mb": 4096,
+	  "ephemeral_disk_in_mb": 1024,
+	  "cpu": 1  
+	},
+	"hawq_master_data": {
+	  "ram_in_mb": 4096,
+	  "persistent_disk_in_mb": 2048,
+	  "cpu": 1  
+	},
+	"gemfire_xd_data": {
+	  "ram_in_mb": 4096,
+	  "persistent_disk_in_mb": 2048,
+	  "cpu": 1  
+	},
+	"slave_data": {
+	  "ram_in_mb": 4096,
+	  "persistent_disk_in_mb": 2048,
+	  "cpu": 1  
+	}
+      }
+    }
+  }
+}

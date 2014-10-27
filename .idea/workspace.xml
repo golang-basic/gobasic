@@ -2,6 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3a04f10-9ad9-4f81-afc3-f9075d37397f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basics/interfacesStructs/structslikeenums/Enum.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basics/encoding/Json_UserDefFunctions.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game/sudoku/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_helpers/UserDefined.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game/sudoku/board.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basics/cgoexamples/cgoexample.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game/sudoku/play/godoku.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basics/interfacesStructs/structslikeenums/planet.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basics/cgoexamples/unix_crypt.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basics/encoding/encoding" afterPath="$PROJECT_DIR$/basics/encoding/encoding" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basics/interfacesStructs/structslikeenums/EnumDays.go" afterPath="$PROJECT_DIR$/basics/interfacesStructs/structslikeenums/EnumDays.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basics/encoding/UnMarshal_XML_Nodes.go" afterPath="$PROJECT_DIR$/basics/encoding/UnMarshal_XML_Nodes.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gobasic.iws" />
@@ -66,64 +78,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UnMarshal_XML_Nodes.go" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/basics/encoding/UnMarshal_XML_Nodes.go">
+      <file leaf-file-name="planet.go" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/basics/interfacesStructs/structslikeenums/planet.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="5" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
+            <state line="15" column="1" selection-start="161" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1245">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test_Time_time_Date.go" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/basics/encoding/Test_Time_time_Date.go">
+      <file leaf-file-name="Enum.go" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/basics/interfacesStructs/structslikeenums/Enum.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="2" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="4125">
+            <state line="8" column="0" selection-start="95" selection-end="95" vertical-scroll-proportion="0.3560831" vertical-offset="0" max-vertical-offset="337">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="all_test.go" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/go-xmlpath/all_test.go">
+      <file leaf-file-name="EnumMonth.go" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/basics/interfacesStructs/structslikeenums/EnumMonth.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7035">
+            <state line="40" column="17" selection-start="544" selection-end="544" vertical-scroll-proportion="0.0" vertical-offset="231" max-vertical-offset="1065">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="doc.go" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/go-xmlpath/doc.go">
+      <file leaf-file-name="EnumDays.go" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/basics/interfacesStructs/structslikeenums/EnumDays.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="8" selection-start="2940" selection-end="2940" vertical-scroll-proportion="0.0" vertical-offset="770" max-vertical-offset="1185">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parser.go" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/go-xmlpath/parser.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3585">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="path.go" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/go-xmlpath/path.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9105">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Time_time_Marshal_UnMarshal.go" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/basics/encoding/Time_time_Marshal_UnMarshal.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="29" selection-start="102" selection-end="102" vertical-scroll-proportion="0.30612245" vertical-offset="0" max-vertical-offset="1950">
+            <state line="57" column="1" selection-start="925" selection-end="1191" vertical-scroll-proportion="0.0" vertical-offset="855" max-vertical-offset="1215">
               <folding />
             </state>
           </provider>
@@ -147,12 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/main_suite_test.go" />
-        <option value="$PROJECT_DIR$/src/main/main_test.go" />
-        <option value="$PROJECT_DIR$/src/main/gobasic.go" />
-        <option value="$PROJECT_DIR$/guess_number/guess_number_suite_test.go" />
-        <option value="$PROJECT_DIR$/tic_tac_toe/tic_tax_toe_test.go" />
-        <option value="$PROJECT_DIR$/guess_number/guess_number_test.go" />
         <option value="$PROJECT_DIR$/guess_number/guess_number.go" />
         <option value="$PROJECT_DIR$/tic_tac_toe/tic_tac_toe.go" />
         <option value="$PROJECT_DIR$/main/main.go" />
@@ -184,20 +163,33 @@
         <option value="$PROJECT_DIR$/basics/array/mutable.go" />
         <option value="$PROJECT_DIR$/basics/db/dbmap.go" />
         <option value="$PROJECT_DIR$/basics/encoding/Test_Time_time_Date.go" />
-        <option value="$PROJECT_DIR$/basics/encoding/UnMarshal_XML_Nodes.go" />
         <option value="$PROJECT_DIR$/basics/encoding/Time_time_Marshal_UnMarshal.go" />
         <option value="$PROJECT_DIR$/lib/go-xmlpath/all_test.go" />
         <option value="$PROJECT_DIR$/lib/go-xmlpath/doc.go" />
         <option value="$PROJECT_DIR$/lib/go-xmlpath/parser.go" />
         <option value="$PROJECT_DIR$/lib/go-xmlpath/path.go" />
+        <option value="$PROJECT_DIR$/basics/encoding/UnMarshal_XML_Nodes.go" />
+        <option value="$PROJECT_DIR$/basics/cgoexamples/unix_crypt.go" />
+        <option value="$PROJECT_DIR$/basics/cgoexamples/cgoexample.go" />
+        <option value="$PROJECT_DIR$/test_helpers/UserDefined.json" />
+        <option value="$PROJECT_DIR$/basics/encoding/Json_UserDefFunctions.go" />
+        <option value="$PROJECT_DIR$/game/sudoku/Makefile" />
+        <option value="$PROJECT_DIR$/game/sudoku/board.go" />
+        <option value="$PROJECT_DIR$/game/sudoku/godoku.go" />
+        <option value="$PROJECT_DIR$/game/sudoku/play/godoku.go" />
+        <option value="$PROJECT_DIR$/basics/interfacesStructs/inheritance.go" />
+        <option value="$PROJECT_DIR$/basics/interfacesStructs/customStructSorts.go" />
+        <option value="$PROJECT_DIR$/basics/interfacesStructs/structslikeenums/Enum.go" />
+        <option value="$PROJECT_DIR$/basics/interfacesStructs/structslikeenums/EnumMonth.go" />
+        <option value="$PROJECT_DIR$/basics/interfacesStructs/structslikeenums/planet.go" />
+        <option value="$PROJECT_DIR$/basics/interfacesStructs/structslikeenums/EnumDays.go" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="720" />
     <option name="y" value="22" />
-    <option name="width" value="720" />
-    <option name="height" value="812" />
+    <option name="width" value="1440" />
+    <option name="height" value="874" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -227,6 +219,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -256,7 +249,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="game" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -273,18 +266,8 @@
               <option name="myItemId" value="game" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gobasic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gobasic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="basics" />
+              <option name="myItemId" value="sudoku" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -298,17 +281,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="basics" />
+              <option name="myItemId" value="game" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="encoding" />
+              <option name="myItemId" value="sudoku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="play" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gobasic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gobasic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basics" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -329,6 +329,14 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test_helpers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/game/sudoku/play" />
+    </key>
   </component>
   <component name="RunManager" selected="Go Application.blog_stat">
     <configuration default="false" name="tic_tac_toe" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
@@ -740,7 +748,13 @@
       <workItem from="1402022978720" duration="4059000" />
       <workItem from="1402081005682" duration="18037000" />
       <workItem from="1402712483084" duration="18805000" />
-      <workItem from="1402984780328" duration="9738000" />
+      <workItem from="1402984780328" duration="15642000" />
+      <workItem from="1403403988707" duration="5432000" />
+      <workItem from="1403999849910" duration="1408000" />
+      <workItem from="1404330360500" duration="4000000" />
+      <workItem from="1404524616249" duration="25034000" />
+      <workItem from="1405372987708" duration="71000" />
+      <workItem from="1414434700166" duration="17000" />
     </task>
     <task id="LOCAL-00001" summary="Added tic tac toe source and test files&#10;">
       <created>1401227728618</created>
@@ -810,11 +824,27 @@
       <created>1403160958594</created>
       <updated>1403160958594</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="XML encoding in Golang">
+      <created>1403161011882</created>
+      <updated>1403161011882</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Inheritence examples in Golang">
+      <created>1404524724562</created>
+      <updated>1404524724562</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Structs implementing sorts interface to accommodate sorting feature in structs">
+      <created>1404527306647</created>
+      <updated>1404527306647</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Enums in golang , expressing Days and Months as enum constants in GOlang">
+      <created>1404603011281</created>
+      <updated>1404603011281</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154962000" />
+    <option name="totallyTimeSpent" value="196828000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -837,11 +867,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="720" y="22" width="720" height="812" extended-state="0" />
+    <frame x="0" y="22" width="1440" height="874" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962631" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.51719576" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -854,18 +884,18 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45870206" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3111588" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -930,7 +960,11 @@
     <MESSAGE value="Done: Encoding in GOlang : Correcting comments" />
     <MESSAGE value="Done:Time.time using encoding in GOlang" />
     <MESSAGE value="XMl encoding in Golang" />
-    <option name="LAST_COMMIT_MESSAGE" value="XMl encoding in Golang" />
+    <MESSAGE value="XML encoding in Golang" />
+    <MESSAGE value="Inheritence examples in Golang" />
+    <MESSAGE value="Structs implementing sorts interface to accommodate sorting feature in structs" />
+    <MESSAGE value="Enums in golang , expressing Days and Months as enum constants in GOlang" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enums in golang , expressing Days and Months as enum constants in GOlang" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -942,336 +976,267 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/basics/closure/closureWithRoutines.go">
+    <entry file="file://$PROJECT_DIR$/basics/interfacesStructs/structslikeenums/EnumDays.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="14" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basics/array/mutable.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="20" selection-start="3155" selection-end="3155" vertical-scroll-proportion="0.0" vertical-offset="2025" max-vertical-offset="2805">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basics/variadic/variadic.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="25" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="690">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basics/closure/closure.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="19" selection-start="763" selection-end="763" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="750">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="33" selection-start="682" selection-end="694" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="555">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="33" selection-start="682" selection-end="694" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="555">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="33" selection-start="682" selection-end="694" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="555">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/pkg/builtin/builtin.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="8" selection-start="631" selection-end="636" vertical-scroll-proportion="0.17371601" vertical-offset="200" max-vertical-offset="3930">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/pkg/math/rand/rand.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="16" selection-start="2402" selection-end="2407" vertical-scroll-proportion="0.23584905" vertical-offset="990" max-vertical-offset="3180" />
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/pkg/fmt/scan.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="385" column="5" selection-start="11234" selection-end="11234" vertical-scroll-proportion="0.33247423" vertical-offset="5517" max-vertical-offset="17580" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="153" selection-end="153" vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="180" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basics/closure/closureEasy.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="10" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basics/closure/fibonacciSequence.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="10" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basics/closure/closureWithRoutines.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="14" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basics/closure/closure.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="19" selection-start="763" selection-end="763" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="750">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basics/variadic/variadic.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="54" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="690">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/ssoni_rot2/workspace/go/src/github.com/golang-basic/go-curl/easy.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="29" selection-start="5756" selection-end="5756" vertical-scroll-proportion="0.0" vertical-offset="2550" max-vertical-offset="6810" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/go-curl/go-curl/c-callback.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1110" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/go-curl/go-curl/callback.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="521" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/go-curl/go-curl/const.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2775">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/go-curl/go-curl/easy.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.894434" vertical-offset="2550" max-vertical-offset="6810">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/go-curl/go-curl/logging.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="930">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/go-curl/go-curl/multi.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.54702497" vertical-offset="285" max-vertical-offset="2400">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/ssoni_rot2/workspace/go/src/github.com/golang-basic/go-curl/const_gen.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="205" column="4" selection-start="10265" selection-end="10265" vertical-scroll-proportion="0.0" vertical-offset="2902" max-vertical-offset="6240" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/go-curl/go-curl/examples/sepheaders.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/go-curl/go-curl/examples/sendrecv.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="65" max-vertical-offset="750">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/go-curl/go-curl/callback.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1440">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/go-curl/go-curl/core.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1860">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/ssoni_rot2/workspace/phd-cf/broker-release/src/deps/code.google.com/p/go.crypto/ssh/client.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="62" selection-start="5370" selection-end="5376" vertical-scroll-proportion="0.0" vertical-offset="2568" max-vertical-offset="3405" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/tower_of_hanoi/tower_of_hanoi.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="20" selection-start="131" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/go-mssh/readhosts_fromfile.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="35" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="5" selection-start="874" selection-end="874" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/get_blog_stats/sshMachine.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="825">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/get_blog_stats/HostAndUrls.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="18" selection-start="417" selection-end="417" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="600">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/get_blog_stats/blog_stat.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="8" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="2220">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basics/array/mutable.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="176" column="1" selection-start="3357" selection-end="3837" vertical-scroll-proportion="0.0" vertical-offset="2063" max-vertical-offset="3225">
+        <state line="57" column="1" selection-start="925" selection-end="1191" vertical-scroll-proportion="0.0" vertical-offset="855" max-vertical-offset="1215">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/ssoni_rot2/workspace/go/src/github.com/mattn/go-sqlite3/sqlite3.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="5" selection-start="1701" selection-end="1701" vertical-scroll-proportion="0.0" vertical-offset="1031" max-vertical-offset="8100">
-          <folding />
-        </state>
+        <state line="82" column="5" selection-start="1701" selection-end="1701" vertical-scroll-proportion="0.0" vertical-offset="1031" max-vertical-offset="8100" />
       </provider>
     </entry>
     <entry file="file:///usr/local/go/src/pkg/os/path.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="5" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="1935">
-          <folding />
-        </state>
+        <state line="18" column="5" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="1935" />
       </provider>
     </entry>
     <entry file="file:///usr/local/go/src/pkg/strings/strings.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="293" column="5" selection-start="6730" selection-end="6730" vertical-scroll-proportion="0.0" vertical-offset="4196" max-vertical-offset="10965">
-          <folding />
-        </state>
+        <state line="293" column="5" selection-start="6730" selection-end="6730" vertical-scroll-proportion="0.0" vertical-offset="4196" max-vertical-offset="10965" />
       </provider>
     </entry>
     <entry file="file:///usr/local/go/src/pkg/database/sql/sql.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="38" selection-start="2595" selection-end="2595" vertical-scroll-proportion="0.0" vertical-offset="1285" max-vertical-offset="25290">
-          <folding />
-        </state>
+        <state line="99" column="38" selection-start="2595" selection-end="2595" vertical-scroll-proportion="0.0" vertical-offset="1285" max-vertical-offset="25290" />
       </provider>
     </entry>
     <entry file="file:///usr/local/go/src/pkg/database/sql/driver/driver.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="24" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0" vertical-offset="111" max-vertical-offset="3255">
-          <folding />
-        </state>
+        <state line="23" column="24" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0" vertical-offset="111" max-vertical-offset="3255" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/basics/db/dbmap.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="14" selection-start="3984" selection-end="3984" vertical-scroll-proportion="0.0" vertical-offset="1770" max-vertical-offset="2745">
-          <folding />
-        </state>
+        <state line="129" column="14" selection-start="3984" selection-end="3984" vertical-scroll-proportion="0.0" vertical-offset="1770" max-vertical-offset="2745" />
       </provider>
     </entry>
     <entry file="file:///usr/local/go/src/pkg/time/format.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="413" column="14" selection-start="12696" selection-end="12696" vertical-scroll-proportion="0.0" vertical-offset="5992" max-vertical-offset="18750">
-          <folding />
-        </state>
+        <state line="413" column="14" selection-start="12696" selection-end="12696" vertical-scroll-proportion="0.0" vertical-offset="5992" max-vertical-offset="18750" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/go-xmlpath/all_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7035">
-          <folding />
-        </state>
+        <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7035" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/go-xmlpath/doc.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="8" selection-start="2940" selection-end="2940" vertical-scroll-proportion="0.0" vertical-offset="770" max-vertical-offset="1185">
-          <folding />
-        </state>
+        <state line="72" column="8" selection-start="2940" selection-end="2940" vertical-scroll-proportion="0.0" vertical-offset="770" max-vertical-offset="1185" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/go-xmlpath/parser.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3585">
-          <folding />
-        </state>
+        <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3585" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/go-xmlpath/path.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9105">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basics/encoding/UnMarshal_XML_Nodes.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="5" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
-          <folding />
-        </state>
+        <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9105" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/basics/encoding/Test_Time_time_Date.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="2" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="4125">
-          <folding />
-        </state>
+        <state line="2" column="2" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="4125" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/encoding/UnMarshal_XML_Nodes.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="10" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/basics/encoding/Time_time_Marshal_UnMarshal.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="29" selection-start="102" selection-end="102" vertical-scroll-proportion="0.30612245" vertical-offset="0" max-vertical-offset="1950">
+        <state line="13" column="0" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1950" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/cgoexamples/unix_crypt.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="1" selection-start="21" selection-end="621" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/cgoexamples/cgoexample.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="1" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_helpers/UserDefined.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="30" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="1095" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/encoding/Json_UserDefFunctions.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="22" selection-start="2219" selection-end="2219" vertical-scroll-proportion="0.0" vertical-offset="730" max-vertical-offset="1395" />
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/pkg/strconv/atoi.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="192" column="5" selection-start="4262" selection-end="4262" vertical-scroll-proportion="0.7754491" vertical-offset="2362" max-vertical-offset="3030" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/sudoku/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="0" selection-start="2377" selection-end="2377" vertical-scroll-proportion="0.0" vertical-offset="1117" max-vertical-offset="1575" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe_winning.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="668" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2265" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe_suite_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe_init.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1575" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/tic_tac_toe/tic_tac_toe.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4515" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/tower_of_hanoi/tower_of_hanoi.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="20" selection-start="131" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1125" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/guess_number/guess_number.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/guess_number/guess_number_suite_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/gopherslides/waza.slide">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-39.276897" vertical-offset="24823" max-vertical-offset="25455" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/guess_number/guess_number_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/tower_of_hanoi/tower_of_hanoi_suite_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/tower_of_hanoi/tower_of_hanoi_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/get_blog_stats/sshMachine.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="0" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0" vertical-offset="182" max-vertical-offset="825" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/get_blog_stats/HostAndUrls.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="18" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/get_blog_stats/blog_stat.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="4" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2220" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/sudoku/play/godoku.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="14" selection-start="820" selection-end="820" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="720" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/sudoku/board.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="3" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0" vertical-offset="2625" max-vertical-offset="3885" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/interfacesStructs/inheritance.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="0" selection-start="2807" selection-end="2807" vertical-scroll-proportion="0.0" vertical-offset="754" max-vertical-offset="1455" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/interfacesStructs/customStructSorts.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="0" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="810" />
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/pkg/strconv/itoa.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="10" selection-start="170" selection-end="170" vertical-scroll-proportion="0.09983361" vertical-offset="0" max-vertical-offset="2055" />
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/pkg/strconv/ftoa.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="42" selection-start="1526" selection-end="1530" vertical-scroll-proportion="0.0" vertical-offset="310" max-vertical-offset="7215" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/closure/closureWithRoutines.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="18" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="660" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/closure/fibonacciSequence.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/closure/closureEasy.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/closure/closure.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750" />
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/pkg/os/proc.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="5" selection-start="1144" selection-end="1144" vertical-scroll-proportion="0.0" vertical-offset="6" max-vertical-offset="630" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/interfacesStructs/structslikeenums/planet.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="1" selection-start="161" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/interfacesStructs/structslikeenums/EnumMonth.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="17" selection-start="544" selection-end="544" vertical-scroll-proportion="0.0" vertical-offset="231" max-vertical-offset="1065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/interfacesStructs/structslikeenums/EnumDays.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="1" selection-start="925" selection-end="1191" vertical-scroll-proportion="0.0" vertical-offset="394" max-vertical-offset="1215">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/interfacesStructs/structslikeenums/Enum.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="95" selection-end="95" vertical-scroll-proportion="0.3560831" vertical-offset="0" max-vertical-offset="337">
           <folding />
         </state>
       </provider>

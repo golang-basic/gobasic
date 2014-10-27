@@ -20,7 +20,7 @@ const (
 	SUNDAY
 )
 
-// Enums should be able to prontout as strings
+// Enums should be able to printout as strings
 // so we declare the next best thing, a slice of strings
 // for eg. the string value will be used in the println
 var days = [...]string {

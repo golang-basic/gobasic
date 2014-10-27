@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func Later() {
 	type Email struct {
 		Where string `xml:"where,attr"`
 		Addr  string
