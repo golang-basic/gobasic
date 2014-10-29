@@ -16,25 +16,12 @@ func main() {
 
 func LSCS(a []int) (res [3]int) {
 	res = [3]int{}
-	/**
-	res[0] = max sum
-	res[1] = max start index
-	res[2] = max end index
-	S[i][j] where the value S[i][j] represents the value
-	 of sum starting from i to j
-	 */
-//	S := make([][]int, len(a))
-//	for i := range S {
-//		S[i] = make([]int, len(a))
-//	}
-	//	max_sum := a[0]
+
 	res[0] = 0
 	var pre int
 	for i := range a {
-//		S[i][0] = a[i]
 		pre = a[i]
-		for j := i+1; j < len(a); j++ {
-//			S[i][j] = S[i][j-1]+a[j]
+		for j := i + 1; j < len(a); j++ {
 			pre = pre+a[j]
 			if (res[0] < pre) {
 				res[0] = pre
@@ -44,9 +31,7 @@ func LSCS(a []int) (res [3]int) {
 
 		}
 	}
-//	PrintMatrix(S)
 	return
-
 }
 
 
