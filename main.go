@@ -5,15 +5,15 @@ import (
 	"github.com/golang-basic/tic_tac_toe"
 	"github.com/golang-basic/guess_number"
 	"github.com/golang-basic/tower_of_hanoi"
-//	"github.com/gobasic/game/tic_tac_toe"
-//	"github.com/gobasic/game/guess_number"
-//	"github.com/gobasic/game/tower_of_hanoi"
+//	"github.com/golang-basic/game/tic_tac_toe"
+//	"github.com/golang-basic/game/guess_number"
+//	"github.com/golang-basic/game/tower_of_hanoi"
 	//"github.com/gobasic/game/get_blog_stats"
 )
 
 func main() {
 	choice := 4
-	fmt.Println("Enter the choice.\n 1. Tic-Tac-Toe \n 2. Guess Number\n 3. Tower of Hanoi ")
+	fmt.Println("Enter the choice.\n 1. Tic-r®Tac-Toe \n 2. Guess Number\n 3. Tower of Hanoi ")
 	fmt.Scanf("%d", &choice)
 	switch {
 	case choice == 1:
