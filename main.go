@@ -2,10 +2,13 @@ package main
 
 import (
 	"fmt"
-	"github.com/gobasic/game/tic_tac_toe"
-	"github.com/gobasic/game/guess_number"
-	"github.com/gobasic/game/tower_of_hanoi"
-	"github.com/gobasic/game/get_blog_stats"
+	"github.com/golang-basic/tic_tac_toe"
+	"github.com/golang-basic/guess_number"
+	"github.com/golang-basic/tower_of_hanoi"
+//	"github.com/gobasic/game/tic_tac_toe"
+//	"github.com/gobasic/game/guess_number"
+//	"github.com/gobasic/game/tower_of_hanoi"
+	//"github.com/gobasic/game/get_blog_stats"
 )
 
 func main() {
@@ -31,6 +34,6 @@ func main() {
 		tower_of_hanoi.SimulateGame()
 	case choice == 4:
 		fmt.Println("Playing Blog runs")
-		get_blog_stats.ExecuteBlog()
+	//	get_blog_stats.ExecuteBlog()
 	}
 }
