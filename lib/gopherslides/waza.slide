@@ -1,0 +1,1691 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Concurrency is not Parallelism</title>
+    <meta charset='utf-8'>
+    <script src='/static/slides.js'></script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(["_setAccount", "UA-11222381-6"]);
+_gaq.push(["_trackPageview"]);
+</script>
+  </head>
+
+  <body style='display: none'>
+
+    <section class='slides layout-widescreen'>
+      
+      <article>
+        <h1>Concurrency is not Parallelism</h1>
+        <h3>Waza Jan 11, 2012</h3>
+        
+        
+          <div class="presenter">
+            
+  
+  <p>
+    Rob Pike
+  </p>
+  
+
+          </div>
+        
+      </article>
+      
+  
+  
+      <article>
+      
+        <h3>Video</h3>
+        
+  
+  <p>
+    This talk was presented at Heroku&#39;s Waza conference in January 2012.
+  </p>
+  
+<p class="link"><a href="http://vimeo.com/49718712" target="_blank">Watch the talk on Vimeo</a></p>
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>The modern world is parallel</h3>
+        
+  
+  <p>
+    Multicore.
+  </p>
+  
+
+  
+  <p>
+    Networks.
+  </p>
+  
+
+  
+  <p>
+    Clouds of CPUs.
+  </p>
+  
+
+  
+  <p>
+    Loads of users.
+  </p>
+  
+
+  
+  <p>
+    Our technology should help.
+<br>
+
+    That&#39;s where concurrency comes in.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Go supports concurrency</h3>
+        
+  
+  <p>
+    Go provides:
+  </p>
+  
+
+  <ul>
+  
+    <li>concurrent execution (goroutines)</li>
+  
+    <li>synchronization and messaging (channels)</li>
+  
+    <li>multi-way concurrent control (select)</li>
+  
+  </ul>
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Concurrency is cool! Yay parallelism!!</h3>
+        
+  
+  <p>
+    NO! A fallacy.
+  </p>
+  
+
+  
+  <p>
+    When Go was announced, many were confused by the distinction.
+  </p>
+  
+
+  
+  <p>
+    &#34;I ran the prime sieve with 4 processors and it got slower!&#34;
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Concurrency</h3>
+        
+  
+  <p>
+    Programming as the composition of independently executing processes.
+  </p>
+  
+
+  
+  <p>
+    (Processes in the general sense, not Linux processes. Famously hard to define.)
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Parallelism</h3>
+        
+  
+  <p>
+    Programming as the simultaneous execution of (possibly related) computations.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Concurrency vs. parallelism</h3>
+        
+  
+  <p>
+    Concurrency is about dealing with lots of things at once.
+  </p>
+  
+
+  
+  <p>
+    Parallelism is about doing lots of things at once.
+  </p>
+  
+
+  
+  <p>
+    Not the same, but related.
+  </p>
+  
+
+  
+  <p>
+    Concurrency is about structure, parallelism is about execution.
+  </p>
+  
+
+  
+  <p>
+    Concurrency provides a way to structure a solution to solve a problem that may (but not necessarily) be parallelizable.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>An analogy</h3>
+        
+  
+  <p>
+    Concurrent: Mouse, keyboard, display, and disk drivers.
+  </p>
+  
+
+  
+  <p>
+    Parallel: Vector dot product.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Concurrency plus communication</h3>
+        
+  
+  <p>
+    Concurrency is a way to structure a program by breaking it into pieces that can be executed independently.
+  </p>
+  
+
+  
+  <p>
+    Communication is the means to coordinate the independent executions.
+  </p>
+  
+
+  
+  <p>
+    This is the Go model and (like Erlang and others) it&#39;s based on CSP:
+  </p>
+  
+
+  
+  <p>
+    C. A. R. Hoare: Communicating Sequential Processes (CACM 1978)
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Gophers</h3>
+        
+  
+  <p>
+    This is too abstract. Let&#39;s get concrete.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Our problem</h3>
+        
+  
+  <p>
+    Move a pile of obsolete language manuals to the incinerator.
+  </p>
+  
+
+<div class="image">
+  <img src="waza/gophersimple1.jpg">
+</div>
+
+  
+  <p>
+    With only one gopher this will take too long.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>More gophers!</h3>
+        
+<div class="image">
+  <img src="waza/gophersimple3.jpg">
+</div>
+
+  
+  <p>
+    More gophers are not enough; they need more carts.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>More gophers and more carts</h3>
+        
+<div class="image">
+  <img src="waza/gophersimple2.jpg">
+</div>
+
+  
+  <p>
+    This will go faster, but there will be bottlenecks at the pile and incinerator.
+<br>
+
+    Also need to synchronize the gophers.
+<br>
+
+    A message (that is, a communication between the gophers) will do.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Double everything</h3>
+        
+  
+  <p>
+    Remove the bottleneck; make them really independent.
+  </p>
+  
+
+<div class="image">
+  <img src="waza/gophersimple4.jpg">
+</div>
+
+  
+  <p>
+    This will consume input twice as fast.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Concurrent composition</h3>
+        
+<div class="image">
+  <img src="waza/gophersimple4.jpg">
+</div>
+
+  
+  <p>
+    The concurrent composition of two gopher procedures.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Concurrent composition</h3>
+        
+  
+  <p>
+    This design is not automatically parallel!
+  </p>
+  
+
+  
+  <p>
+    What if only one gopher is moving at a time?
+<br>
+
+    Then it&#39;s still concurrent (that&#39;s in the design), just not parallel.
+  </p>
+  
+
+  
+  <p>
+    However, it&#39;s automatically parallelizable!
+  </p>
+  
+
+  
+  <p>
+    Moreover the concurrent composition suggests other models.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Another design</h3>
+        
+<div class="image">
+  <img src="waza/gophercomplex0.jpg">
+</div>
+
+  
+  <p>
+    Three gophers in action, but with likely delays.
+<br>
+
+    Each gopher is an independently executing procedure,
+<br>
+
+    plus coordination (communication).
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Finer-grained concurrency</h3>
+        
+  
+  <p>
+    Add another gopher procedure to return the empty carts.
+  </p>
+  
+
+<div class="image">
+  <img src="waza/gophercomplex1.jpg">
+</div>
+
+  
+  <p>
+    Four gophers in action for better flow, each doing one simple task.
+  </p>
+  
+
+  
+  <p>
+    If we arrange everything right (implausible but not impossible), that&#39;s four times faster than our original one-gopher design.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Observation</h3>
+        
+  
+  <p>
+    We improved performance by adding a concurrent procedure to the existing design.
+  </p>
+  
+
+  
+  <p>
+    More gophers doing more work; it runs better.
+  </p>
+  
+
+  
+  <p>
+    This is a deeper insight than mere parallelism.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Concurrent procedures</h3>
+        
+  
+  <p>
+    Four distinct gopher procedures:
+  </p>
+  
+
+  <ul>
+  
+    <li>load books onto cart</li>
+  
+    <li>move cart to incinerator</li>
+  
+    <li>unload cart into incinerator</li>
+  
+    <li>return empty cart</li>
+  
+  </ul>
+
+  
+  <p>
+    Different concurrent designs enable different ways to parallelize.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>More parallelization!</h3>
+        
+  
+  <p>
+    We can now parallelize on the other axis; the concurrent design makes it easy. Eight gophers, all busy.
+  </p>
+  
+
+<div class="image">
+  <img src="waza/gophercomplex2.jpg">
+</div>
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Or maybe no parallelization at all</h3>
+        
+  
+  <p>
+    Keep in mind, even if only one gopher is active at a time (zero parallelism), it&#39;s still a correct and concurrent solution.
+  </p>
+  
+
+<div class="image">
+  <img src="waza/gophercomplex2.jpg">
+</div>
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Another design</h3>
+        
+  
+  <p>
+    Here&#39;s another way to structure the problem as the concurrent composition of gopher procedures.
+  </p>
+  
+
+  
+  <p>
+    Two gopher procedures, plus a staging pile.
+  </p>
+  
+
+<div class="image">
+  <img src="waza/gophercomplex3.jpg">
+</div>
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Parallelize the usual way</h3>
+        
+  
+  <p>
+    Run more concurrent procedures to get more throughput.
+  </p>
+  
+
+<div class="image">
+  <img src="waza/gophercomplex4.jpg">
+</div>
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Or a different way</h3>
+        
+  
+  <p>
+    Bring the staging pile to the multi-gopher concurrent model:
+  </p>
+  
+
+<div class="image">
+  <img src="waza/gophercomplex5.jpg">
+</div>
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Full on optimization</h3>
+        
+  
+  <p>
+    Use all our techniques. Sixteen gophers hard at work!
+  </p>
+  
+
+<div class="image">
+  <img src="waza/gophercomplex6.jpg">
+</div>
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Lesson</h3>
+        
+  
+  <p>
+    There are many ways to break the processing down.
+  </p>
+  
+
+  
+  <p>
+    That&#39;s concurrent design.
+  </p>
+  
+
+  
+  <p>
+    Once we have the breakdown, parallelization can fall out and correctness is easy.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Back to Computing</h3>
+        
+  
+  <p>
+    In our book transport problem, substitute:
+  </p>
+  
+
+  <ul>
+  
+    <li>book pile =&gt; web content</li>
+  
+    <li>gopher =&gt; CPU</li>
+  
+    <li>cart =&gt; marshaling, rendering, or networking</li>
+  
+    <li>incinerator =&gt; proxy, browser, or other consumer</li>
+  
+  </ul>
+
+  
+  <p>
+    It becomes a concurrent design for a scalable web service.
+<br>
+
+    Gophers serving web content.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>A little background about Go</h3>
+        
+  
+  <p>
+    Not the place for a tutorial, just quick highlights.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Goroutines</h3>
+        
+  
+  <p>
+    A goroutine is a function running independently  in the same address space as other goroutines
+  </p>
+  
+
+  <div class="code" contenteditable="true" spellcheck="false">
+
+
+<pre><span num="1">f(&#34;hello&#34;, &#34;world&#34;) // f runs; we wait</span>
+</pre>
+
+
+</div>
+
+  <div class="code" contenteditable="true" spellcheck="false">
+
+
+<pre><span num="3">go f(&#34;hello&#34;, &#34;world&#34;) // f starts running</span>
+<span num="4">g() // does not wait for f to return</span>
+</pre>
+
+
+</div>
+
+  
+  <p>
+    Like launching a function with shell&#39;s <code>&amp;</code> notation.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Goroutines are not threads </h3>
+        
+  
+  <p>
+    (They&#39;re a bit like threads, but they&#39;re much cheaper.)
+  </p>
+  
+
+  
+  <p>
+    Goroutines are multiplexed onto OS threads as required.
+  </p>
+  
+
+  
+  <p>
+    When a goroutine blocks, that thread blocks but no other goroutine blocks.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Channels</h3>
+        
+  
+  <p>
+    Channels are typed values that allow goroutines to synchronize and exchange information.
+  </p>
+  
+
+  <div class="code" contenteditable="true" spellcheck="false">
+
+
+<pre><span num="6">timerChan := make(chan time.Time)</span>
+<span num="7">go func() {</span>
+<span num="8">    time.Sleep(deltaT)</span>
+<span num="9">    timerChan &lt;- time.Now() // send time on timerChan</span>
+<span num="10">}()</span>
+<span num="11">// Do something else; when ready, receive.</span>
+<span num="12">// Receive will block until timerChan delivers.</span>
+<span num="13">// Value sent is other goroutine&#39;s completion time.</span>
+<span num="14">completedAt := &lt;-timerChan</span>
+</pre>
+
+
+</div>
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Select</h3>
+        
+  
+  <p>
+    The <code>select</code> statement is like a <code>switch</code>, but the decision is based on ability to communicate rather than equal values.
+  </p>
+  
+
+  <div class="code" contenteditable="true" spellcheck="false">
+
+
+<pre><span num="16">select {</span>
+<span num="17">case v := &lt;-ch1:</span>
+<span num="18">    fmt.Println(&#34;channel 1 sends&#34;, v)</span>
+<span num="19">case v := &lt;-ch2:</span>
+<span num="20">    fmt.Println(&#34;channel 2 sends&#34;, v)</span>
+<span num="21">default: // optional</span>
+<span num="22">    fmt.Println(&#34;neither channel was ready&#34;)</span>
+<span num="23">}</span>
+</pre>
+
+
+</div>
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Go really supports concurrency</h3>
+        
+  
+  <p>
+    Really.
+  </p>
+  
+
+  
+  <p>
+    It&#39;s routine to create thousands of goroutines in one program.
+<br>
+
+    (Once debugged a program after it had created 1.3 million.)
+  </p>
+  
+
+  
+  <p>
+    Stacks start small, but grow and shrink as required.
+  </p>
+  
+
+  
+  <p>
+    Goroutines aren&#39;t free, but they&#39;re very cheap.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Closures are also part of the story</h3>
+        
+  
+  <p>
+    Make some concurrent calculations easier to express.
+  </p>
+  
+
+  
+  <p>
+    They are just local functions.
+<br>
+
+    Here&#39;s a non-concurrent example:
+  </p>
+  
+
+  <div class="code" contenteditable="true" spellcheck="false">
+
+
+<pre><span num="51">func Compose(f, g func(x float) float)</span>
+<span num="52">                  func(x float) float {</span>
+<span num="53">     return func(x float) float {</span>
+<span num="54">        return f(g(x))</span>
+<span num="55">    }</span>
+<span num="56">}</span>
+<span num="57"></span>
+<span num="58">print(Compose(sin, cos)(0.5))</span>
+</pre>
+
+
+</div>
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Some examples</h3>
+        
+  
+  <p>
+    Learn concurrent Go by osmosis.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Launching daemons</h3>
+        
+  
+  <p>
+    Use a closure to wrap a background operation.
+  </p>
+  
+
+  
+  <p>
+    This copies items from the input channel to the output channel:
+  </p>
+  
+
+  <div class="code" contenteditable="true" spellcheck="false">
+
+
+<pre><span num="60">go func() { // copy input to output</span>
+<span num="61">    for val := range input {</span>
+<span num="62">        output &lt;- val</span>
+<span num="63">    }</span>
+<span num="64">}()</span>
+</pre>
+
+
+</div>
+
+  
+  <p>
+    The <code>for</code> <code>range</code> operation runs until channel is drained.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>A simple load balancer (1)</h3>
+        
+  
+  <p>
+    A unit of work:
+  </p>
+  
+
+  <div class="code" contenteditable="true" spellcheck="false">
+
+
+<pre><span num="1">type Work struct {</span>
+<span num="2">    x, y, z int</span>
+<span num="3">}</span>
+</pre>
+
+
+</div>
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>A simple load balancer (2)</h3>
+        
+  
+  <p>
+    A worker task
+  </p>
+  
+
+  <div class="code" contenteditable="true" spellcheck="false">
+
+
+<pre><span num="5">func worker(in &lt;-chan *Work, out chan&lt;- *Work) {</span>
+<span num="6">   for w := range in {</span>
+<span num="7">      w.z = w.x * w.y</span>
+<span num="8">      Sleep(w.z)</span>
+<span num="9">      out &lt;- w</span>
+<span num="10">   }</span>
+<span num="11">}</span>
+</pre>
+
+
+</div>
+
+  
+  <p>
+    Must make sure other workers can run when one blocks.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>A simple load balancer (3)</h3>
+        
+  
+  <p>
+    The runner
+  </p>
+  
+
+  <div class="code" contenteditable="true" spellcheck="false">
+
+
+<pre><span num="13">func Run() {</span>
+<span num="14">   in, out := make(chan *Work), make(chan *Work)</span>
+<span num="15">   for i := 0; i &lt; NumWorkers; i&#43;&#43; {</span>
+<span num="16">       go worker(in, out)</span>
+<span num="17">   }</span>
+<span num="18">   go sendLotsOfWork(in)</span>
+<span num="19">   receiveLotsOfResults(out)</span>
+<span num="20">}</span>
+</pre>
+
+
+</div>
+
+  
+  <p>
+    Easy problem but also hard to solve concisely without concurrency.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Concurrency enables parallelism</h3>
+        
+  
+  <p>
+    The load balancer is implicitly parallel and scalable.
+  </p>
+  
+
+  
+  <p>
+    <code>NumWorkers</code> could be huge.
+  </p>
+  
+
+  
+  <p>
+    The tools of concurrency make it almost trivial to build a safe, working, scalable, parallel design.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Concurrency simplifies synchronization</h3>
+        
+  
+  <p>
+    No explicit synchronization needed.
+  </p>
+  
+
+  
+  <p>
+    The structure of the program is implicitly synchronized.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>That was too easy</h3>
+        
+  
+  <p>
+    Let&#39;s do a more realistic load balancer.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Load balancer</h3>
+        
+<div class="image">
+  <img src="waza/gopherchart.jpg">
+</div>
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Request definition</h3>
+        
+  
+  <p>
+    The requester sends Requests to the balancer
+  </p>
+  
+
+  <div class="code" contenteditable="true" spellcheck="false">
+
+
+<pre><span num="1">type Request struct {</span>
+<span num="2">    fn func() int  // The operation to perform.</span>
+<span num="3">    c  chan int    // The channel to return the result.</span>
+<span num="4">}</span>
+</pre>
+
+
+</div>
+
+  
+  <p>
+    Note the return channel inside the request.
+<br>
+
+    Channels are first-class values.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Requester function</h3>
+        
+  
+  <p>
+    An artificial but illustrative simulation of a requester, a load generator.
+  </p>
+  
+
+  <div class="code" contenteditable="true" spellcheck="false">
+
+
+<pre><span num="6">func requester(work chan&lt;- Request) {</span>
+<span num="7">    c := make(chan int)</span>
+<span num="8">    for {</span>
+<span num="9">        // Kill some time (fake load).</span>
+<span num="10">        Sleep(rand.Int63n(nWorker * 2 * Second))</span>
+<span num="11">        work &lt;- Request{workFn, c} // send request</span>
+<span num="12">        result := &lt;-c              // wait for answer</span>
+<span num="13">        furtherProcess(result)  </span>
+<span num="14">    }    </span>
+<span num="15">}</span>
+</pre>
+
+
+</div>
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Worker definition</h3>
+        
+  
+  <p>
+    A channel of requests, plus some load tracking data.
+  </p>
+  
+
+  <div class="code" contenteditable="true" spellcheck="false">
+
+
+<pre><span num="46">type Worker struct {</span>
+<span num="47">    requests chan Request // work to do (buffered channel)</span>
+<span num="48">    pending  int          // count of pending tasks</span>
+<span num="49">    index     int         // index in the heap</span>
+<span num="50">}</span>
+</pre>
+
+
+</div>
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Worker</h3>
+        
+  
+  <p>
+    Balancer sends request to most lightly loaded worker
+  </p>
+  
+
+  <div class="code" contenteditable="true" spellcheck="false">
+
+
+<pre><span num="17">func (w *Worker) work(done chan *Worker) {</span>
+<span num="18">    for {</span>
+<span num="19">        req := &lt;-w.requests // get Request from balancer</span>
+<span num="20">        req.c &lt;- req.fn()   // call fn and send result</span>
+<span num="21">        done &lt;- w           // we&#39;ve finished this request</span>
+<span num="22">    }</span>
+<span num="23">}</span>
+</pre>
+
+
+</div>
+
+  
+  <p>
+    The channel of requests (<code>w.requests</code>) delivers requests to each worker.  The balancer tracks the number of pending requests as a measure of load.
+<br>
+
+    Each response goes directly to its requester.
+  </p>
+  
+
+  
+  <p>
+    Could run the loop body as a goroutine for parallelism.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Balancer definition</h3>
+        
+  
+  <p>
+    The load balancer needs a pool of workers and a single channel to which requesters can report task completion.
+  </p>
+  
+
+  <div class="code" contenteditable="true" spellcheck="false">
+
+
+<pre><span num="25">type Pool []*Worker</span>
+<span num="26"></span>
+<span num="27">type Balancer struct {</span>
+<span num="28">    pool Pool</span>
+<span num="29">    done chan *Worker</span>
+<span num="30">}</span>
+</pre>
+
+
+</div>
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Balancer function</h3>
+        
+  
+  <p>
+    Easy!
+  </p>
+  
+
+  <div class="code" contenteditable="true" spellcheck="false">
+
+
+<pre><span num="32">func (b *Balancer) balance(work chan Request) {</span>
+<span num="33">    for {</span>
+<span num="34">        select {</span>
+<span num="35">        case req := &lt;-work: // received a Request...</span>
+<span num="36">            b.dispatch(req) // ...so send it to a Worker</span>
+<span num="37">        case w := &lt;-b.done: // a worker has finished ...</span>
+<span num="38">            b.completed(w)  // ...so update its info</span>
+<span num="39">        }</span>
+<span num="40">    }</span>
+<span num="41">}</span>
+</pre>
+
+
+</div>
+
+  
+  <p>
+    Just need to implement dispatch and completed.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>A heap of channels</h3>
+        
+  
+  <p>
+    Make Pool an implementation of the <code>Heap</code> interface by providing a few methods such as:
+  </p>
+  
+
+  <div class="code" contenteditable="true" spellcheck="false">
+
+
+<pre><span num="42">func (p Pool) Less(i, j int) bool {</span>
+<span num="43">    return p[i].pending &lt; p[j].pending</span>
+<span num="44">}</span>
+</pre>
+
+
+</div>
+
+  
+  <p>
+    Now we balance by making the <code>Pool</code> a heap tracked by load.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Dispatch</h3>
+        
+  
+  <p>
+    All the pieces are in place.
+  </p>
+  
+
+  <div class="code" contenteditable="true" spellcheck="false">
+
+
+<pre><span num="52">// Send Request to worker</span>
+<span num="53">func (b *Balancer) dispatch(req Request) {</span>
+<span num="54">    // Grab the least loaded worker...</span>
+<span num="55">    w := heap.Pop(&amp;b.pool).(*Worker)</span>
+<span num="56">    // ...send it the task.</span>
+<span num="57">    w.requests &lt;- req</span>
+<span num="58">    // One more in its work queue.</span>
+<span num="59">    w.pending&#43;&#43;</span>
+<span num="60">    // Put it into its place on the heap.</span>
+<span num="61">    heap.Push(&amp;b.pool, w)</span>
+<span num="62">}</span>
+</pre>
+
+
+</div>
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Completed</h3>
+        
+  <div class="code" contenteditable="true" spellcheck="false">
+
+
+<pre><span num="64">// Job is complete; update heap</span>
+<span num="65">func (b *Balancer) completed(w *Worker) {</span>
+<span num="66">    // One fewer in the queue.</span>
+<span num="67">    w.pending--</span>
+<span num="68">    // Remove it from heap.                  </span>
+<span num="69">    heap.Remove(&amp;b.pool, w.index)</span>
+<span num="70">    // Put it into its place on the heap.</span>
+<span num="71">    heap.Push(&amp;b.pool, w)</span>
+<span num="72">}</span>
+</pre>
+
+
+</div>
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Lesson</h3>
+        
+  
+  <p>
+    A complex problem can be broken down into easy-to-understand components.
+  </p>
+  
+
+  
+  <p>
+    The pieces can be composed concurrently.
+  </p>
+  
+
+  
+  <p>
+    The result is easy to understand, efficient, scalable, and correct.
+  </p>
+  
+
+  
+  <p>
+    Maybe even parallel.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>One more example</h3>
+        
+  
+  <p>
+    We have a replicated database and want to minimize latency by asking them all and returning the first response to arrive.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Query a replicated database</h3>
+        
+  <div class="code" contenteditable="true" spellcheck="false">
+
+
+<pre><span num="25">func Query(conns []Conn, query string) Result {</span>
+<span num="26">    ch := make(chan Result, len(conns))  // buffered</span>
+<span num="27">    for _, conn := range conns {</span>
+<span num="28">        go func(c Conn) {</span>
+<span num="29">            ch &lt;- c.DoQuery(query):</span>
+<span num="30">        }(conn)</span>
+<span num="31">    }</span>
+<span num="32">    return &lt;-ch</span>
+<span num="33">}</span>
+</pre>
+
+
+</div>
+
+  
+  <p>
+    Concurrent tools and garbage collection make this an easy solution to a subtle problem.
+  </p>
+  
+
+  
+  <p>
+    (Teardown of late finishers is left as an exercise.)
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Conclusion</h3>
+        
+  
+  <p>
+    Concurrency is powerful.
+  </p>
+  
+
+  
+  <p>
+    Concurrency is not parallelism.
+  </p>
+  
+
+  
+  <p>
+    Concurrency enables parallelism.
+  </p>
+  
+
+  
+  <p>
+    Concurrency makes parallelism (and scaling and everything else) easy.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>For more information</h3>
+        
+  
+  <p>
+    Go: golang.org
+  </p>
+  
+
+  
+  <p>
+    Some history: swtch.com/~rsc/thread/
+  </p>
+  
+
+  
+  <p>
+    A previous talk (video): tinyurl.com/newsqueak
+  </p>
+  
+
+  
+  <p>
+    Parellelism is not concurrency (Harper): tinyurl.com/pincharper
+  </p>
+  
+
+  
+  <p>
+    A concurrent window system (Pike): tinyurl.com/pikecws
+  </p>
+  
+
+  
+  <p>
+    Concurrent power series (McIlroy): tinyurl.com/powser
+  </p>
+  
+
+  
+  <p>
+    And finally, parallel but not concurrent:
+<br>
+
+    research.google.com/archive/sawzall.html
+  </p>
+  
+
+      
+      </article>
+  
+  
+
+      <article>
+        <h3>Thank you</h1>
+        
+          <div class="presenter">
+            
+  
+  <p>
+    Rob Pike
+  </p>
+  
+<p class="link"><a href="mailto:r@golang.org" target="_blank">r@golang.org</a></p>
+          </div>
+        
+      </article>
+
+<script type="text/javascript">
+(function() {
+  var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+  ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+  var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+  </body>
+  
+  <script src='/play.js'></script>
+  
+</html>
