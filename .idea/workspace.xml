@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3a04f10-9ad9-4f81-afc3-f9075d37397f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/go_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gobasic.iml" afterPath="$PROJECT_DIR$/gobasic.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/guess_number/guess_number_test.go" afterPath="$PROJECT_DIR$/game/guess_number/guess_number_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.go" afterPath="$PROJECT_DIR$/main.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/tower_of_hanoi/tower_of_hanoi_test.go" afterPath="$PROJECT_DIR$/game/tower_of_hanoi/tower_of_hanoi_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/guess_number" afterPath="$PROJECT_DIR$/game/guess_number" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/tic_tac_toe" afterPath="$PROJECT_DIR$/game/tic_tac_toe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/tower_of_hanoi" afterPath="$PROJECT_DIR$/game/tower_of_hanoi" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gobasic.iws" />
@@ -815,7 +812,7 @@
       <workItem from="1416090469307" duration="50000" />
       <workItem from="1416090521119" duration="112000" />
       <workItem from="1416090706082" duration="201000" />
-      <workItem from="1416090909438" duration="771000" />
+      <workItem from="1416090909438" duration="1448000" />
     </task>
     <task id="LOCAL-00001" summary="Added tic tac toe source and test files&#10;">
       <created>1401227728618</created>
@@ -929,11 +926,15 @@
       <created>1416093770997</created>
       <updated>1416093770997</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="corrected imports in main.golang class">
+      <created>1416094388093</created>
+      <updated>1416094388093</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224722000" />
+    <option name="totallyTimeSpent" value="225399000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
